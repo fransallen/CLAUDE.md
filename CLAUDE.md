@@ -22,14 +22,17 @@
 ## Code
 - Follow the patterns already in the codebase before adding new ones
 - When something fails only in CI, find the cause. Don't just rerun until it passes
+- Flaky tests are bugs. Fix or report them, never mark them as skipped to get green
 - Ask before using sudo or changing anything outside the project folder
 
 ## Memory
 - When I make a decision, record it with the date in project memory, so later sessions don't ask again or undo it
+- Write dates as real dates (2026-11-24), never "tomorrow" or "last week", in notes, memory and commits
 
 ## Git and GitHub
 - Never push, merge, tag, or comment, close or edit on GitHub unless I ask. Reading is fine
 - One branch per task, in its own git worktree, off the working branch. Never commit straight to main
+- Keep files with secrets (.env, credentials, keys) out of git, and warn me if one is about to be committed
 - Release notes: group changes under emoji headings (🚀 Features, 🐞 Bug Fixes, ⬆️ Security Fixes, ⚡ Performance, 📝 Docs), one bullet per change with its commit link
 
 ## Safety

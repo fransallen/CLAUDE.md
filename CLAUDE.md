@@ -9,6 +9,24 @@
 - Plain, short sentences. No semicolons, no clauses joined with dashes, no filler words
 - Minimal UI text. Say what a thing does, not how it works inside
 
+## Product and UX
+- User-facing errors say what's wrong and what to do next, in plain words. Never show raw internals (stack traces, Kubernetes messages, error codes alone)
+- UI must not flash or jump while loading. Wait for the data that decides what to show instead of showing something and swapping it
+- Scripts people run show live progress and short, plain output. No debug noise
+- Every user-facing change updates its docs in the same piece of work
+
+## Releases
+- Cut a release candidate first and test it on throwaway machines before the real tag
+- Every release says plainly what users must do (a command to run, a restart to expect) at the top of its notes
+
+## Code
+- Follow the patterns already in the codebase before adding new ones
+- When something fails only in CI, find the cause. Don't just rerun until it passes
+- Ask before using sudo or changing anything outside the project folder
+
+## Memory
+- When I make a decision, record it with the date in project memory, so later sessions don't ask again or undo it
+
 ## Git and GitHub
 - Never push, merge, tag, or comment, close or edit on GitHub unless I ask. Reading is fine
 - One branch per task, in its own git worktree, off the working branch. Never commit straight to main

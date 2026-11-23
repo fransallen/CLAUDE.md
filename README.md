@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-My global instructions for [Claude Code](https://claude.com/claude-code). It reads `~/.claude/CLAUDE.md` in every session, in every project.
+My global instructions for Claude Code. It reads `~/.claude/CLAUDE.md` in every session, in every project.
 
 ## What's in it
 

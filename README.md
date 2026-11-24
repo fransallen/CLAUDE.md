@@ -11,7 +11,7 @@ My global instructions for Claude Code. It reads `~/.claude/CLAUDE.md` in every 
 - **Code:** follow existing patterns, find the cause of CI failures, ask before sudo
 - **Memory:** record decisions with dates
 - **Git and GitHub:** Conventional Commits, one worktree per task, no pushing without asking, no AI attribution
-- **Safety:** read-only on live systems, throwaway test resources, secrets never printed
+- **Safety:** read-only on live systems, throwaway test resources, secrets never printed, no real infra names in public
 - **Dependencies:** exact pins, verified checksums, CVE checks
 - **Telegram:** a short message when a task is done or needs me
 - **Agents and machine resources:** spawn agents, but keep memory and disk healthy

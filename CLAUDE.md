@@ -40,6 +40,8 @@
 - Tests and experiments use throwaway resources with made-up names. Never reuse or touch my existing resources, and clean up afterwards
 - Secrets: read them from the password manager CLI only when needed. Never print, log, commit or paste them anywhere
 - Never read a production app's own database directly. Use its API, logs or events
+- Never put real infrastructure details in anything public: code, tests, docs, commits, issues, pull requests, release notes. That means tailnet names, host and laptop names, IP addresses, cluster and resource ids, gateway names, account ids and internal ops notes. Use made-up examples like `tail1234.ts.net`, `100.64.0.1`, `203.0.113.10` and `server-1`. Keep ops notes in a private repo
+- Before pushing to a public repo, check the change for real names and addresses. If one has already leaked, remove it and tell me
 
 ## Dependencies and supply chain
 - Pin versions exactly (images by digest where possible). Verify checksums and signatures from the official release, never guess them
